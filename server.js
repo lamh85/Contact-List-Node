@@ -3,6 +3,8 @@
 
 var express = require('express');
 var app = express();
+var mongojs = require('mongojs');
+var db = mongojs('contactlist', ['contactlist']);
 
 // Look for static file
 app.use(express.static(__dirname + "/public"));
