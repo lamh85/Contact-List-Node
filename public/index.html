@@ -20,6 +20,13 @@
 
   {{contactlist}}
 
+  <h1>Post to database!</h1>
+  Name <input ng-model="contact.name">
+  <p>Email<input ng-model="contact.email">
+  <p>Number<input ng-model="contact.number">
+  <p><button ng-click="addContact()">Add Contact</button>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="/controllers/controller.js"></script>
 </body>
